@@ -35,7 +35,7 @@ class Val:
 
         return res
 
-    def __rmul__(self, other):
+    def __mul__(self, other):
         other = self.valObjWrapper(other)
         res = Val(self.data * other.data, (self, other), '*')
 
