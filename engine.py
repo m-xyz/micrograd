@@ -78,31 +78,6 @@ class Val:
             i._backward()
         print(topo)
 
-
-#a = Val(2,label='a')
-#b = Val(1,label='b')
-##a = a * 2; a.label = 'a'
-##c = a + b
-##c.backpropagation()
-##draw_dot(c)
-#a = a + 1
-#a.label = 'a'
-#c = a + b
-#c.label = 'c'
-#d = Val(1,label='d')
-#z = Val(3, label='z')
-#x = Val(2, label='x')
-#d = z * x
-#d.label = 'd'
-#e = c * d
-#e.label = 'e'
-#f = Val(2, label='f')
-#L = e * f
-#L.label = 'L'
-#o = L.tanh()
-#o.backpropagation()
-#draw_dot(o)
-
 x1 = Val(2.0, label='x1')
 x2 = Val(0.0, label='x2')
 
@@ -113,7 +88,6 @@ b = Val(6.8813735870195432, label='bias')
 
 x1w1 = x1 * w1; x1w1.label = 'x1 * w1'
 x2w2 = x2 * w2; x2w2.label = 'x2 * w2'
-
 
 x1w1x2w2 = x1w1 + x2w2; x1w1x2w2.label = 'x1 * w1 + x2 * w2'
 n = x1w1x2w2 + b; n.label = 'n'
